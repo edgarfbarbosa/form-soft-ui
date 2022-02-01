@@ -1,0 +1,26 @@
+form {
+    background: linear-gradient(145deg, #ECF0F3, #F0F0F0 );
+    box-shadow: 18px 18px 30px #D1D9E6,
+    -18px -18px 100px #FFF;
+}
+
+.form__input {
+    background: #ECF0F3;
+    box-shadow: inset 5px 5px 10px #D1D9E6,
+    inset -3px -3px 10px #FFF;
+}
+
+.form__button {
+    border-top: 1px solid #E0E0E0;
+    border-right: 1px solid #D1D9E6;
+    border-bottom: 1px solid #E0E0E0;
+    border-left: 1px solid #D1D9E6;
+    background: #F0F0F0;
+}
+
+.form__button:hover {
+    transition: 1s;
+    background: linear-gradient(145deg, #ECF0F3, #F0F0F0 );
+    box-shadow: inset 10px 10px 30px #D1D9E6,
+    inset -8px -8px 100px #FFF;
+}
