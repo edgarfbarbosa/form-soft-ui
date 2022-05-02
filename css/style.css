@@ -1,26 +1,26 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {    
-    display: flex;
     align-items: center;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
     justify-content: center;
     min-height: 100vh;
-    font-family: 'Montserrat', sans-serif;
 }
 
 form {
-    width: 460px;
-    padding: 2rem;
     border-radius: 35px;
+    padding: 2rem;
+    width: 460px;
 }
 
 .title__main {
-    font-weight: bold;
     font-size: 26px;
+    font-weight: bold;
     margin-bottom: .5rem;
 }
 
@@ -30,18 +30,18 @@ form {
 }
 
 .container__name {
+    column-gap: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 8px;
 }
 
 .form__input {
-    width: 100%;
-    font-size: 16px;
     border: 0;
     border-radius: 8px;
-    padding: 7px;
+    font-size: 16px;
     margin-bottom: 1rem;
+    padding: 7px;
+    width: 100%;
 }
 
 .title__general {
@@ -50,15 +50,15 @@ form {
 }
 
 .container__date {
+    column-gap: 12px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 12px;
 }
 
 .form__button {
-    font-size: 18px;
     border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
     padding: 10px;
     width: 100%;
-    cursor: pointer;
 }

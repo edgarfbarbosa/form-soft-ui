@@ -35,7 +35,7 @@
 		
 		<div>
 			<label for="password"></label>
-			<input type="password" id="password" name="password" placeholder="Nova senha" required class="form__input">
+			<input type="password" id="password" name="password" placeholder="Nova senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required class="form__input">
 		</div>
 		
 		<h3 class="title__general">Data de nascimento</h3>
