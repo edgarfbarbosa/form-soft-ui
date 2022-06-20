@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/neumorphism.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	
+	<title>Acesse sua conta</title>
+</head>
+<body>
+	<form>
+		<h1 class="title__main">Acesse sua conta</h1>
+		<h2 class="title__subtitle">Conheça nossa comunidade</h2>
+		<fieldset>
+			<div>
+				<label for="login"></label>
+				<input type="text" id="login" name="login" placeholder="Celular ou email" required class="form__input">
+			</div>
+			<div>
+				<label for="password"></label>
+				<input type="password" id="password" name="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required class="form__input">
+			</div>
+		</fieldset>
+		<button type="submit" class="form__button">Entrar</button>
+	</form>
+</body>
