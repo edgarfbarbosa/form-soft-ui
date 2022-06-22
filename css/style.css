@@ -67,3 +67,13 @@ form {
     text-decoration: none;
     color: black;
 }
+
+/* login */
+
+.form__container--login {
+    display: flex;
+    flex-direction: column;
+    height: 325px;
+    justify-content: space-evenly;
+    width: 400px;
+}
