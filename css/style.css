@@ -63,11 +63,6 @@ form {
     width: 100%;
 }
 
-.form__button a {
-    text-decoration: none;
-    color: black;
-}
-
 /* login */
 
 .form__container--login {
