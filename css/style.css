@@ -72,3 +72,13 @@ form {
     justify-content: space-evenly;
     width: 400px;
 }
+
+/* invalid */
+
+input:invalid {
+    border: 1px solid grey;
+}
+
+input:valid {
+    border: 0;
+}

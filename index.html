@@ -13,13 +13,13 @@
 	<title>Cadastre-se</title>
 </head>
 <body>
-	<form action="#" method="post">
+	<form action="#" method="post" id="form">
 		<h1 class="title__main">Cadastre-se</h1>
 		<h2 class="title__subtitle">É rápido e simples.</h2>
 		<fieldset class="container__name">
 			<div>
 				<label for="name"></label>
-				<input type="text" id="name" name="username" placeholder="Nome" required class="form__input">
+				<input type="text" id="name" name="username" placeholder="Nome" required class="form__input" onchange="validateName();">
 			</div>
 			<div>
 				<label for="surname"></label>
@@ -28,8 +28,8 @@
 		</fieldset>
 		<div>
 			<label for="login"></label>
-			<input type="text" id="login" name="login" placeholder="Celular ou email" required class="form__input">
-		</div>
+			<input type="email" id="login" name="login" placeholder="email" required class="form__input">
+		</div> 
 		<div>
 			<label for="password"></label>
 			<input type="password" id="password" name="password" placeholder="Nova senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required class="form__input">
