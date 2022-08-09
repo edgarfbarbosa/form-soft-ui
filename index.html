@@ -28,11 +28,11 @@
 		</fieldset>
 		<div>
 			<label for="login"></label>
-			<input type="email" id="login" name="login" placeholder="email" required class="form__input" onchange="validateLogin();">
+			<input type="email" id="login" name="login" placeholder="Email ou telefone" required class="form__input" onchange="validateLogin();">
 		</div> 
 		<div>
 			<label for="password"></label>
-			<input type="password" id="password" name="password" placeholder="Nova senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required class="form__input">
+			<input type="password" id="password" name="password" placeholder="Nova senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required class="form__input" onchange="validatePassword();">
 		</div>
 		<h3 class="title__general">Data de nascimento</h3>
 		<fieldset class="container__date">
@@ -62,7 +62,7 @@
 					<option>21</option>
 					<option>22</option>
 					<option>23</option>
-					<option>24</option>
+					<option selected>24</option>
 					<option>25</option>
 					<option>26</option>
 					<option>27</option>
@@ -82,7 +82,7 @@
 					<option>Mai</option>
 					<option>Jun</option>
 					<option>Jul</option>
-					<option>Ago</option>
+					<option selected>Ago</option>
 					<option>Set</option>
 					<option>Out</option>
 					<option>Nov</option>
@@ -117,7 +117,7 @@
 					<option>2000</option>
 					<option>1999</option>
 					<option>1998</option>
-					<option>1997</option>
+					<option selected>1997</option>
 					<option>1996</option>
 					<option>1995</option>
 					<option>1994</option>
@@ -136,7 +136,7 @@
 			<label for="gender"></label>
 			<select id="gender" name="gender" class="form__input">
 				<option>Feminino</option>
-				<option>Masculino</option>
+				<option selected>Masculino</option>
 				<option>Personalizado</option>
 			</select>
 		</div>

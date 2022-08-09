@@ -1,5 +1,6 @@
-// const form = document.getElementById('form');
-// const btn = document.getElementById('btn');
+const btn = document.getElementById('btn');
+
+var i = 0;
 
 function validateName() {
     let inputName = document.getElementById('name');
@@ -8,6 +9,7 @@ function validateName() {
         inputName.setCustomValidity("Wrong! The name is Edgar.");
     } else {
         inputName.setCustomValidity("");
+        i++;
     }
 }
 
@@ -18,6 +20,7 @@ function validateSurname() {
         inputSurname.setCustomValidity("Wrong! Last name is Barbosa.")
     } else {
         inputSurname.setCustomValidity("");
+        i++;
     }
 }
 
@@ -28,9 +31,23 @@ function validateLogin() {
         inputLogin.setCustomValidity("Wrong! The value is edgarfbarbosa@outlook.com");
     } else {
         inputLogin.setCustomValidity("");
+        i++;
     }
 }
 
-// btn.addEventListener('click', () => {
-//     window.location.href = 'login.html';
-// })
+function validatePassword() {
+    let inputPassword = document.getElementById('password');
+
+    if (inputPassword.value != "Password123") {
+        inputPassword.setCustomValidity("Wrong! The password is Password123")
+    } else {
+        inputPassword.setCustomValidity("");
+        i++;
+    }
+}
+
+btn.addEventListener('click', () => {
+    if (i >= 3) {
+        window.location.href = 'login.html';
+    }
+})
